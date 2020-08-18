@@ -137,6 +137,11 @@ bool gcc_wrapper_t::can_handle_command() {
     }
   }
 
+// icecream?
+  if ((cmd.find("cc") != std::string::npos) || (cmd.find("c++") != std::string::npos)) {
+    return true;
+  }
+
   return false;
 }
 
