@@ -316,7 +316,7 @@ std::unique_ptr<bcache::program_wrapper_t> find_suitable_wrapper(
       // Replace the command with the true exe path. Most of the following operations rely on having
       // a correct executable path. Also, this is important to avoid recursions when we are invoked
       // from a symlink, for instance.
-      args[0] = true_exe_path;
+      //args[0] = true_exe_path;
 
       try {
         return_code = 1;
